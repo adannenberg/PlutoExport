@@ -16,17 +16,6 @@ macro bind(def, element)
     #! format: on
 end
 
-# ╔═╡ 99cb7cf8-a9df-11ef-221d-87167b2e404a
-begin
-    if Sys.isapple()
-        path = "/Users/alex/Library/CloudStorage/Dropbox/Code/Julia/data/"
-    elseif Sys.islinux()
-        path = "/home/alex/Dropbox/Code/Julia/data/"
-    end
-	using PlutoUI,DataFrames, CSV, Random, PrettyTables, Format, JuMP, HiGHS, HypertextLiteral
-	Print()
-end
-
 # ╔═╡ d5be6e8a-6e84-4a33-87a9-7b972bf92edc
 @bind go Button("Recompute")
 
@@ -34,7 +23,7 @@ end
 begin
 	
 	function makeSampleRotationOrderBook()
-	    tickers = CSV.read(path * "spx_constituents.csv", DataFrame)
+	    tickers = CSV.read("spx_constituents.csv", DataFrame)
 	    nsec = length(tickers.ticker)
 	    npm = 9
 	    numOrders = npm * nsec
