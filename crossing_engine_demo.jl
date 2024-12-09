@@ -33,6 +33,7 @@ begin
 	    npm = 9
 	    numOrders = npm * nsec
 	    #Random.seed!(456) #321
+	    go
 	    v = Float64.(rand([200, 700, 1200], numOrders))
 	    p = rand(1:nsec, numOrders)
 	    orderBook = DataFrame(
@@ -295,7 +296,7 @@ end
 
 # ╔═╡ 77adcf13-1ba4-4e6a-8744-3636d0f67ca1
 begin
-	go
+	#go
 	ob = convertRotationOrderBookToRegularOrderBook(makeSampleRotationOrderBook())
 	ob = ob_flattener(ob)
 	ob_exec, tMat, executionReport = crossing_engine(ob);
