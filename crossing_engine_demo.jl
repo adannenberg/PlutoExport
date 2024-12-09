@@ -28,7 +28,7 @@ end
 # ╔═╡ 03bffb9e-d5a2-458e-ad2b-cbc87002bc82
 begin
 	function makeSampleRotationOrderBook()
-	    tickers = CSV.read("spx_constituents.csv", DataFrame)
+	    tickers = CSV.read("main/spx_constituents.csv", DataFrame)
 	    nsec = length(tickers.ticker)
 	    npm = 9
 	    numOrders = npm * nsec
