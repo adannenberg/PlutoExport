@@ -23,7 +23,7 @@ begin
 end
 
 # ╔═╡ d5be6e8a-6e84-4a33-87a9-7b972bf92edc
-@bind go Button("Recompute")
+@bind go CounterButton("Recompute")
 
 # ╔═╡ 03bffb9e-d5a2-458e-ad2b-cbc87002bc82
 begin
