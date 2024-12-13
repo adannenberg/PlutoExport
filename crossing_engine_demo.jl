@@ -22,6 +22,25 @@ begin
 	Print()
 end
 
+# ╔═╡ 006fde87-cbbf-49aa-b7fd-45cc6721d171
+html"""
+<style>
+div.edit_or_run {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0) !important;
+    overflow: hidden !important;
+}
+</style>
+"""
+
 # ╔═╡ d5be6e8a-6e84-4a33-87a9-7b972bf92edc
 @bind go CounterButton("Recompute")
 
