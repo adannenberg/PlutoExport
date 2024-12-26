@@ -18,13 +18,8 @@ end
 
 # ╔═╡ b6aaa574-7002-42dd-b195-765bb88896c6
 begin
-	  if Sys.isapple()
-		myPath = "/Users/alex/Library/CloudStorage/Dropbox/Code/Julia/"
-     elseif Sys.islinux()
-		 myPath = "/home/alex/Dropbox/Code/Julia/"
-     end
 	using Revise, CSV, DataFrames, Dates, Distributions, Format, Grep, HypertextLiteral, Ipopt, JuMP, LinearAlgebra, Loess, NaNStatistics, Optim, Plots, PlutoUI, PrettyTables, Random, Revise, XLSX
-	include(myPath * "myFuncs.jl")
+	include(download("https://raw.githubusercontent.com/adannenberg/PlutoExport/main/myFuncs.jl"))
 	Print()
 end
 
