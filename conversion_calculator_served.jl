@@ -19,7 +19,7 @@ end
 # ╔═╡ b6aaa574-7002-42dd-b195-765bb88896c6
 begin
 	using Revise, CSV, DataFrames, Dates, Distributions, Format, Grep, HypertextLiteral, Ipopt, JuMP, LinearAlgebra, Loess, NaNStatistics, Optim, Plots, PlutoUI, PrettyTables, Random, Revise, XLSX
-	include(string(@__DIR__)*"myFuncs.jl")
+	include("https://raw.githubusercontent.com/adannenberg/PlutoExport/main/myFuncs.jl")
 	Print()
 end
 
