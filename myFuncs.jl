@@ -129,6 +129,7 @@ us_trading_holidays_2024 = [
 ]
 us_trading_holidays_2025 = [
     Date(2025, 1, 1),
+    #Date(2025, 1, 9), #this is a trading holiday to honor jimmy carter, but it's a good settlement day - and i don't distinguish trading from settlement holidays
     Date(2025, 1, 20),
     Date(2025, 2, 17),
     Date(2025, 4, 18),
